@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
             height: 100vh;
+            display: flex;
             justify-content: center;
             align-items: center;
         }
@@ -31,6 +32,28 @@
             height: 100%;
             border-radius: 50%;
             background: linear-gradient(#dd0000, #fecf11, #22ff00, #096bff);
+        }
+        .loader span:nth-child(1) {
+            filter: blur(20px);
+        }
+        .loader span:nth-child(2) {
+            filter: blur(30px);
+        }
+        .loader span:nth-child(3) {
+            filter: blur(40px);
+        }
+        .loader span:nth-child(4) {
+            filter: blur(50px);
+        }
+        .loader:after{
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            bottom: 5px;
+            right: 5px;
+            background-color: #0d003c;
+            border-radius: 50%;
         }
     </style>
 </head>

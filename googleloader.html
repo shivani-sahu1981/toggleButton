@@ -4,6 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #eef5fe;
+        }
+        .wrapper{
+            display: flex;
+            column-gap: 10px;
+        }
+        .wrapper .dot{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: #008ae6;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            animation: animate 1s ease-in-out infinite alternate;
+        }
+
+        .dot:nth-child(1){
+
+        }
+
+        .dot:nth-child(2){
+            background-color: #e60000;
+        }
+
+        .dot:nth-child(3){
+            background-color: #ffcc00;
+        }
+
+        .dot:nth-child(4){
+            background-color: #008800;
+        }
+        
+    </style>
 </head>
 <body>
     <div class="wrapper">

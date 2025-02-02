@@ -31,19 +31,31 @@
         }
 
         .dot:nth-child(1){
-
+            animation-delay: -0.25s;
         }
 
         .dot:nth-child(2){
             background-color: #e60000;
+            animation-delay: -0.5s;
         }
 
         .dot:nth-child(3){
             background-color: #ffcc00;
+            animation-delay: -0.75s;
         }
 
         .dot:nth-child(4){
             background-color: #008800;
+            animation-delay: -1s;
+        }
+
+        @keyframes animate {
+            0%{
+                transform: translateY(-10px);
+            }
+            100%{
+                transform: translateY(-5px);
+            }
         }
         
     </style>
